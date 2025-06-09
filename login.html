@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <title>HelloKitty登录</title>
+  <link type="text/css" rel="stylesheet" href="./css/register.css" />
+  <script src="js/login.js" defer></script>
+</head>
+
+<body>
+<div class="wrapin">
+  <!--头部-->
+  <header>
+    <ul class="nav">
+     <li><a href="./index.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>个人介绍</a></li>
+      <li><a href="Info.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>原创小说</a></li>
+      <li><a href="./HumanRelationships.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>所爱声优</a></li>
+      <li><a href="./Movie.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>所爱广播剧</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)"><img src="./images/index/12.png" alt="" style="width: 15%"/>登录</a>
+        <ul class="dropdown-menu">
+          <li><a href="./register.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>注册</a></li>
+          <li><a href="./login.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>登录</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- 登录表单部分 -->
+  <div class="register-container">
+    <div class="image-container">
+      <img src="./images/2.png" alt="Image 1">
+    </div>
+    <div class="form-container">
+      <h2>登录账户</h2>
+      <form id="login-form" onsubmit="handleLoginSubmit(event)">
+        <div class="form-group">
+          <label for="nickname">昵称</label>
+          <input type="text" id="nickname" name="nickname" required placeholder="请输入昵称">
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" name="password" required placeholder="请输入密码">
+        </div>
+        <button type="submit" class="submit-btn">登录</button>
+      </form>
+    </div>
+  </div>
+
+  <!--底部-->
+  <footer>
+    <a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E5%B9%BF%E6%92%AD%E5%89%A7%E4%BB%8B%E7%BB%8D&fenlei=256&oq=%25E5%25B9%25BF%25E6%2592%25AD%25E5%2589%25A7%25E4%25BB%258B%25E7%25BB%258D&rsv_pq=860898b201e20f8b&rsv_t=b911lv5yefofX5GBinb%2F5zuk10M7NVn6ayCi866uj4g2pbglC2gIgrZXI7A&rqlang=cn&rsv_enter=0&rsv_dl=tb&rsv_btype=t&rsv_sug3=3&rsv_sug1=3&rsv_sug7=100&rsv_sug4=1758&rsv_sug=1" target="_blank" style="display: flex; align-items: center; text-decoration: none;"" target="_blank" style="display: flex; align-items: center; text-decoration: none;"" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
+      <img src="./images/footer.png" alt="HelloKitty" style="width: 40px; height: auto; margin-right: 10px;">
+      <span style="font-size: 20px; color: #ffffff;">关于广播剧</span>
+    </a>
+  </footer>
+</div>
+</body>
+</html>

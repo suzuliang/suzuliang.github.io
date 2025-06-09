@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <title>注册</title>
+  <link type="text/css" rel="stylesheet" href="./css/register.css" />
+</head>
+
+<body>
+<div class="wrapin">
+  <!--头部-->
+  <header>
+    <ul class="nav">
+    <li><a href="./index.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>个人介绍</a></li>
+      <li><a href="Info.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>原创小说</a></li>
+      <li><a href="./HumanRelationships.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>所爱声优</a></li>
+      <li><a href="./Movie.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>所爱广播剧</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)"><img src="./images/index/12.png" alt="" style="width: 15%"/>登录</a>
+        <ul class="dropdown-menu">
+          <li><a href="./register.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>注册</a></li>
+          <li><a href="./login.html"><img src="./images/index/12.png" alt="" style="width: 15%"/>登录</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- 注册表单部分 -->
+  <div class="register-container">
+    <div class="form-container">
+      <h2>注册账户</h2>
+      <form id="register-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="nickname">昵称</label>
+          <input type="text" id="nickname" name="nickname" required placeholder="请输入昵称">
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" name="password" required placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+          <label for="gender">性别</label>
+          <select id="gender" name="gender" required>
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phone">手机号</label>
+          <input type="tel" id="phone" name="phone" required placeholder="请输入手机号">
+        </div>
+        <button type="submit" class="submit-btn">注册</button>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="./images/1.png" alt="Image 1">
+    </div>
+  </div>
+
+  <!--底部-->
+  <footer>
+    <a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E5%B9%BF%E6%92%AD%E5%89%A7%E4%BB%8B%E7%BB%8D&fenlei=256&oq=%25E5%25B9%25BF%25E6%2592%25AD%25E5%2589%25A7%25E4%25BB%258B%25E7%25BB%258D&rsv_pq=860898b201e20f8b&rsv_t=b911lv5yefofX5GBinb%2F5zuk10M7NVn6ayCi866uj4g2pbglC2gIgrZXI7A&rqlang=cn&rsv_enter=0&rsv_dl=tb&rsv_btype=t&rsv_sug3=3&rsv_sug1=3&rsv_sug7=100&rsv_sug4=1758&rsv_sug=1" target="_blank" style="display: flex; align-items: center; text-decoration: none;"" target="_blank" style="display: flex; align-items: center; text-decoration: none;"" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
+      <img src="./images/footer.png" alt="HelloKitty" style="width: 40px; height: auto; margin-right: 10px;">
+      <span style="font-size: 20px; color: #ffffff;">关于广播剧</span>
+    </a>
+  </footer>
+</div>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("注册成功！");
+    window.location.href = "./login.html";
+  }
+</script>
+</body>
+
+</html>
